@@ -1,0 +1,110 @@
+/* Style global pour le corps du document */
+body {
+    font-family: Arial, sans-serif; /* Police de caractère */
+    background-image: url("ringboxe.JPG"); /* Couleur de fond */
+    background-repeat: no-repeat; /* Ne pas repeter le fond */
+    background-size: cover;
+    margin: 0; /* Enlève la marge par défaut */
+    padding: 0; /* Enlève le padding par défaut */
+}
+
+/* Style pour la barre de navigation */
+header {
+    background-color: #800d0d; /* Couleur de fond de la barre de navigation */
+    color: #fff; /* Couleur du texte */
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Alignement vertical au centre */
+    padding: 10px 20px; /* Espacement interne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre de la barre de navigation */
+}
+
+/* Style pour le conteneur du logo */
+header .logo {
+    display: flex; /* Utilisation de Flexbox */
+    align-items: center; /* Alignement vertical au centre */
+}
+
+/* Style pour l'image du logo */
+header .logo img {
+    width: 50px; /* Largeur de l'image */
+    height: 50px; /* Hauteur de l'image */
+    margin-right: 10px; /* Espace à droite de l'image */
+}
+
+/* Style pour le nom du site */
+header .logo h1 {
+    font-size: 1.5em; /* Taille de la police */
+    margin: 0; /* Enlève la marge par défaut */
+}
+
+/* Style pour le bouton de connexion */
+header .login-btn {
+    background-color: #fff; /* Couleur de fond */
+    color: #1b9936; /* Couleur du texte */
+    border: none; /* Enlève la bordure par défaut */
+    padding: 10px 20px; /* Espacement interne */
+    font-size: 1em; /* Taille de la police */
+    cursor: pointer; /* Curseur de pointeur */
+    border-radius: 5px; /* Bordure arrondie */
+    transition: background-color 0.3s, color 0.3s; /* Transition pour les effets de survol */
+}
+
+/* Effet de survol pour le bouton de connexion */
+header .login-btn:hover {
+    background-color: #1b9936; /* Couleur de fond lors du survol */
+    color: #fff; /* Couleur du texte lors du survol */
+}
+
+/* Style pour le conteneur principal des cartes */
+
+
+/* Style pour chaque ligne de cartes */
+.row {
+    display: flex; /* Utilisation de Flexbox */
+    gap: 20px; /* Espace entre les cartes */
+    margin-bottom: 20px; /* Espace en dessous des lignes */
+    justify-content: center; /* Centre les cartes dans chaque ligne */
+}
+
+/* Style pour chaque carte */
+.card {
+    background-color: #fff; /* Couleur de fond */
+    border-radius: 10px; /* Bordure arrondie */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre de la carte */
+    overflow: hidden; /* Masque le débordement */
+    transition: transform 0.2s; /* Transition pour les effets de survol */
+    width: 300px; /* Largeur de la carte */
+    text-decoration: none; /* Enlève le soulignement des liens */
+    color: inherit; /* Utilise la couleur du texte par défaut */
+}
+
+/* Style pour l'image de chaque carte */
+.card img {
+    width: 100%; /* Largeur de l'image */
+    height: auto; /* Hauteur automatique */
+    max-width: 300px; /* Largeur maximale de 300 pixels */
+    max-height: 200px; /* Hauteur maximale de 200 pixels */
+}
+
+/* Style pour le contenu de chaque carte */
+.card .content {
+    padding: 15px; /* Espacement interne */
+}
+
+/* Style pour le titre de chaque carte */
+.card h2 {
+    margin: 0 0 10px; /* Marge en dessous du titre */
+    font-size: 1.5em; /* Taille de la police */
+}
+
+/* Style pour le texte de description de chaque carte */
+.card p {
+    margin: 0; /* Enlève la marge par défaut */
+    color: #555; /* Couleur du texte */
+}
+
+/* Effet de survol pour chaque carte */
+.card:hover {
+    transform: translateY(-10px); /* Déplacement vers le haut lors du survol */
+}
